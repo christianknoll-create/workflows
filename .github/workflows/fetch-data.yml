@@ -1,0 +1,26 @@
+name: Daten aktualisieren
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: TSV von Google Sheets holen
+        run: |
+          curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-tkuIx-dJHnRZ4eJcFe9PTkHpqMCDdrnUaYvl1vF7-KaHqGCcvzq1Znw5VZ_2WFPGDVAYL2kZPwhC/pub?gid=1875048167&single=true&output=tsv" -o daten.tsv
+          curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-tkuIx-dJHnRZ4eJcFe9PTkHpqMCDdrnUaYvl1vF7-KaHqGCcvzq1Znw5VZ_2WFPGDVAYL2kZPwhC/pub?gid=0&single=true&output=tsv" -o config.tsv
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add daten.tsv config.tsv
+          git diff --staged --quiet || git commit -m "Daten update $(date '+%Y-%m-%d %H:%M')"
+          git push
