@@ -1,16 +1,18 @@
 name: Daten aktualisieren
 on:
   schedule:
-    - cron: '0 * * * *'  # jede Stunde
-  workflow_dispatch:       # auch manuell startbar
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Daten von Google Sheets holen
+      - name: TSV von Google Sheets holen
         run: |
           curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-tkuIx-dJHnRZ4eJcFe9PTkHpqMCDdrnUaYvl1vF7-KaHqGCcvzq1Znw5VZ_2WFPGDVAYL2kZPwhC/pub?gid=1875048167&single=true&output=tsv" -o daten.tsv
           curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-tkuIx-dJHnRZ4eJcFe9PTkHpqMCDdrnUaYvl1vF7-KaHqGCcvzq1Znw5VZ_2WFPGDVAYL2kZPwhC/pub?gid=0&single=true&output=tsv" -o config.tsv
