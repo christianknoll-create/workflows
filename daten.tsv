@@ -1,7 +1,7 @@
 Rennname	Donnergurke	Blitzkaefer	Turboschnecke	Warphamster	Nebelwurst	Krümelrakete	Eisenpinguin	Sturmtoaster	Glitzerpanzer	Feuersalami	Stahlkrabbe	Quantenbrötchen	Plasmaziege	Mondschrauber
 Typ	WARM	WARM	WARM	WARM	WARM	WARM	WARM	WARM	COLD	COLD	COLD	COLD	COLD	COLD
 Farbe	#ff0	#0ff	#f0f	#4f4	#f80	#f44	#8ff	#c4f	#ff8	#f4a	#0f8	#fa0	#f88	#4ff
-Aktiv	1	0	1	1	0	1	1	1	0	0	1	1	1	0
+Aktiv	1	1	1	1	0	1	1	1	0	0	1	1	1	0
 Rang	3	1	2	5	8	4	6	10	13	12	7	9	11	#N/A
 KW01		0,59	0,20			0,40	0,38							
 KW02		0,32	0,35	0,17	0,19	0,47	0,28		0,00		0,35	0,24		
@@ -18,7 +18,7 @@ KW12	0,20	0,29	0,30	0,13	0,18	0,20	0,23	0,10			0,35	0,16	0,23	0,00
 KW13	0,40	0,94		0,33		0,20	0,30	0,20			0,20	0,20	0,00	
 KW14	0,25		0,25	0,25		0,45	0,34	0,16			0,25	0,15	0,00	
 KW15	0,58	0,35	0,47	0,50		0,67	0,44	0,09			0,19	0,10	0,08	
-KW16	0,42	0,35	0,25	0,59		0,31	0,22	0,06			0,19	0,10	0,00	
+KW16	0,46	0,35	0,33	0,59		0,31	0,25	0,06			0,25	0,15	0,00	
 KW17														
 KW18														
 KW19														
