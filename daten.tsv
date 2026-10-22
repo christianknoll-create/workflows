@@ -2,7 +2,7 @@ Rennname	Donnergurke	Blitzkaefer	Turboschnecke	Warphamster	Nebelwurst	Krümelrak
 Typ	WARM	WARM	WARM	WARM	WARM	WARM	WARM	WARM	COLD	COLD	COLD	COLD	COLD	COLD	COLD	COLD	WARM
 Farbe	#ff0	#0ff	#f0f	#4f4	#f80	#f44	#8ff	#c4f	#ff8	#f4a	#0f8	#fa0	#f88	#4ff	#4ff	#f60	#a0f
 Aktiv	0	1	1	0	0	1	1	1	0	0	1	1	1	0	0	1	1
-Rang	3	2	1	11	11	11	4	5	11	11	11	#VALUE!	7	6	8	9	10
+Rang	3	2	1	11	11	11	4	5	11	11	11	#VALUE!	8	6	7	9	10
 KW01														0,59	0,20	0,26	
 KW02														0,32	0,35	0,17	0,19
 KW03													0,21	0,24	0,30	0,20	0,13
@@ -45,7 +45,7 @@ KW39							2,0							0,47
 KW40														0,35			
 KW41							1,0							0,38			
 KW42	1,0							2,0						0,59			
-KW43														0,00			
+KW43							4,0							0,47			
 KW44																	
 KW45																	
 KW46																	
